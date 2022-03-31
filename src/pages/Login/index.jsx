@@ -1,9 +1,8 @@
 import React, { Component } from "react"
-import { Button, Form, Icon, Input, Checkbox, message } from "antd"
+import { Button, Form, Icon, Input, Checkbox } from "antd"
 import { NavLink } from "react-router-dom"
 import "./index.css"
 
-import { login } from "../../api/login"
 class LoginForm extends Component {
     handleSubmit = e => {
         const { form, history } = this.props

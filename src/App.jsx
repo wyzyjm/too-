@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import Login from "./pages/Login"
 import Forget from "./pages/Forget"
 import Register from "./pages/Register"
-import Home from "./pages/Home"
+import Admin from "./pages/Admin"
 export default class App extends Component {
     render() {
         return (
@@ -12,8 +12,8 @@ export default class App extends Component {
                     <Route path="/login" component={Login} />
                     <Route path="/forgot" component={Forget} />
                     <Route path="/register" component={Register} />
-                    <Route path="/home" component={Home} />
-                    <Redirect to="/login" />
+                    <Route path="/" component={Admin} />
+                    <Redirect to="/" />
                 </Switch>
             </Router>
         )
